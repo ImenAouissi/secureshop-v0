@@ -13,3 +13,6 @@ Les scénarios d'exploitation se font en séance, dans le laboratoire isolé.
 | Sessions | Cookies sans options Secure, HttpOnly, SameSite | 5 |
 | Pages d'erreur | Messages d'erreur PHP et SQL détaillés | 3 |
 | docker-compose.yml | Image sans durcissement, exécution en root | 8 |
+| admin/users.php | Contrôle d'accès cassé : tout utilisateur connecté peut ouvrir la page, mots de passe en clair affichés | 5 et 7 |
+| admin/products.php | Suppression par simple lien (GET) sans protection CSRF, SQL concaténé | 3, 4 et 6 |
+| Menu Administration | Masqué côté interface seulement, l'accès réel dépend de chaque page | 7 |

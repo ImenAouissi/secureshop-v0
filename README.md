@@ -31,6 +31,7 @@ Repartir de zéro (base comprise) : `docker compose down -v`
     │   ├── search.php       recherche
     │   ├── product.php      fiche produit et avis
     │   ├── login.php  register.php  logout.php
+    │   ├── admin/           back-office (tableau de bord, produits, utilisateurs)
     │   ├── inc/             connexion base, en-tête, pied de page
     │   └── assets/style.css design
     └── docs/NOTES-FORMATRICE.md
@@ -39,4 +40,6 @@ Repartir de zéro (base comprise) : `docker compose down -v`
 
 Catalogue, recherche, fiche produit, avis clients, inscription, connexion, déconnexion.
 
-À ajouter dans les prochaines séquences : panier et commandes, back-office, API REST.
+**Back-office (rôle administrateur) :** tableau de bord, gestion des produits (ajout, modification, suppression), liste des utilisateurs. Le client n'a pas le menu « Administration ».
+
+À ajouter dans les prochaines séquences : panier et commandes, API REST.

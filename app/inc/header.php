@@ -21,8 +21,12 @@ $user = $_SESSION['email'] ?? null;
     </form>
     <nav class="links">
       <a href="/index.php">Catalogue</a>
+      <?php if (($_SESSION['role'] ?? '') === 'admin') { ?>
+        <a href="/admin/index.php">Administration</a>
+      <?php } ?>
       <?php if ($user) { ?>
         <span class="who"><?php echo $user; ?></span>
+        <span class="role <?php echo $_SESSION['role'] ?? ''; ?>"><?php echo $_SESSION['role'] ?? ''; ?></span>
         <a class="btn ghost" href="/logout.php">Déconnexion</a>
       <?php } else { ?>
         <a href="/login.php">Connexion</a>
